@@ -118,7 +118,7 @@ export class WebSocketService {
       if (endTime) params.append('endTime', endTime);
       if (sensorType) params.append('sensorType', sensorType);
 
-      const response = await fetch(`http://localhost:3001/api/sensors/history?${params}`);
+      const response = await fetch(`https://scadaverse-cranedashboard.onrender.com/api/sensors/history?${params}`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -132,7 +132,7 @@ export class WebSocketService {
 
   async fetchCurrentSensorData() {
     try {
-      const response = await fetch('http://localhost:3001/api/sensors/current');
+      const response = await fetch('https://scadaverse-cranedashboard.onrender.com/api/sensors/current');
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }

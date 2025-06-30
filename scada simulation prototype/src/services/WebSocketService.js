@@ -12,7 +12,7 @@ export class WebSocketService {
 
   connect() {
     try {
-      this.socket = io('http://localhost:3001', {
+      this.socket = io('https://scadaverse-cranedashboard.onrender.com/', {
         autoConnect: true,
         reconnection: true,
         reconnectionDelay: this.reconnectDelay,

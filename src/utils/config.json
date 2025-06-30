@@ -95,11 +95,8 @@
       "websocket": {
         "url": "https://digital-twin-bolt.onrender.com",
         "reconnectInterval": 5000
-      },
-      "mqtt": {
-        "broker": "mqtt://localhost:1883",
-        "topics": ["sensors/+/data", "devices/+/status"]
       }
+      
     }
   }
 }
